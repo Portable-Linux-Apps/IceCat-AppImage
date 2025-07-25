@@ -7,7 +7,8 @@ APPIMAGETOOL="https://github.com/pkgforge-dev/appimagetool-uruntime/releases/dow
 UPINFO="gh-releases-zsync|$(echo $GITHUB_REPOSITORY | tr '/' '|')|latest|*$ARCH.AppImage.zsync"
 export URUNTIME_PRELOAD=1 # really needed here
 
-tarball_url=https://icecatbrowser.org$(wget https://icecatbrowser.org/all_downloads.html -O - \
+tarball_url=https://api.rv.pkgforge.dev/https://icecatbrowser.org$(wget \
+	https://api.rv.pkgforge.dev/https://icecatbrowser.org/all_downloads.html -O - \
 	| tr '"><' '\n' | grep -i "linux-x86_64.tar.bz2$" | head -1)
 
 export VERSION=$(echo "$tarball_url" | awk -F'/' '{print $(NF-1); exit}')
