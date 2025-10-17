@@ -3,7 +3,7 @@
 [![GitHub Downloads](https://img.shields.io/github/downloads/Portable-Linux-Apps/IceCat-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/Portable-Linux-Apps/IceCat-AppImage/releases/latest)
 [![CI Build Status](https://github.com//Portable-Linux-Apps/IceCat-AppImage/actions/workflows/blank.yml/badge.svg)](https://github.com/Portable-Linux-Apps/IceCat-AppImage/releases/latest)
 
-This repo takes the [official GNU IceCat binaries](https://icecatbrowser.org/all_downloads.html) and turns them into an AppImage. 
+This repo takes the [**Unofficial** GNU IceCat binaries](https://icecatbrowser.org/all_downloads.html) and turns them into an AppImage. 
 
 No libraries or other dependencies are bundled in, since the official binaries are already portable enough.
 
